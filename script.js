@@ -12,7 +12,6 @@ const numberCheck = document.getElementById("numbers");
 const writePassword = () => {
   let num = parseInt(numLengthInput.value);
   if (num < 8 || num > 128) {
-    
     passwordShow.value = "";
   } else {
     if (numLengthInput.value === "") {
@@ -50,6 +49,7 @@ function showPasswordOptions() {
   const form = document.querySelector('form');
   generateBtn.style.visibility = 'hidden';
   form.style.visibility = "visible"
+  writePassword();
 
 }
 
