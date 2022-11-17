@@ -1,6 +1,7 @@
 const letters = "abcdefghijklmnopqrstuvwxyz".split("");
-const numbers = "123456789".split("");
-const special = "!#$%&()*+,-./:;<=>?@[}^_`{}~".split("");
+const numbers = "0123456789".split("");
+const special = "!#$%&()*+,-./:;<=>?@[]^_`{}~'\"".split("");
+console.log(special)
 const CheckPassContains = (characters, password) => {
   let num = 0;
   characters.forEach((character) => {
