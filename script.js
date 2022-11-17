@@ -13,7 +13,7 @@ const writePassword = () => {
   let num = parseInt(numLengthInput.value);
   if (num < 8 || num > 128) {
     
-    passwordShow.innerHTML = "";
+    passwordShow.value = "";
   } else {
     if (numLengthInput.value === "") {
       passwordShow.innerHTML = "";
