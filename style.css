@@ -57,7 +57,27 @@ header {
 .card-footer {
   text-align: center;
 }
-
+form {
+  visibility: hidden;
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  margin: auto;
+  align-items: center;
+}
+form > div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}
+input[type="checkbox"] {
+  max-width: 15px;
+}
+.num-characters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .card-footer::before {
   content: " ";
   display: block;
@@ -127,6 +147,14 @@ button[disabled] {
 
   #password {
     font-size: 1rem;
+  }
+  form {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  form > div {
+    gap: 30px;
   }
 }
 
