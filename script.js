@@ -9,7 +9,7 @@ const lowerCheck = document.getElementById("lowercase");
 const numberCheck = document.getElementById("numbers");
 
 
-function writePassword() {
+const writePassword = () => {
   let num = parseInt(numLengthInput.value);
   if (num < 8 || num > 128) {
     
@@ -26,7 +26,7 @@ function writePassword() {
       lowerCheck.checked,
       numberCheck.checked
     );
-    passwordShow.innerText = password;
+    passwordShow.value = password;
   }
 }
 numLengthInput.addEventListener("input", (e) => {
