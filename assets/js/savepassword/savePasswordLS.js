@@ -5,6 +5,7 @@ export const savePassword = () => {
     const passwordValue = password.value;
     if (passwordValue === "") return;
     const prevPasswords = JSON.parse(localStorage.getItem('password'));
+    if (prevPasswords.length > 9) return;
     if (prevPasswords){
        prevPasswords.push(passwordValue);
         localStorage.setItem("password", JSON.stringify(prevPasswords))

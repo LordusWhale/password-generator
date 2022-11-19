@@ -182,9 +182,11 @@ flex-direction: column;
 gap: 10px;
 justify-content: center;
 align-items: center;
+width: 100%;
+
 }
 li {
-  width: 50%;
+  width: 90%;
   border-bottom: 1px solid black;
   display: flex;
   align-items: center;
