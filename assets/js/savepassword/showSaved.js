@@ -3,7 +3,7 @@ import {
   getPasswords,
   removeAllPaswords,
   removeSinglePassword
-} from "./savePassword.js";
+} from "./savePasswordLS.js";
 const savePasswordBtn = document.getElementById("save");
 const mainContainer = document.getElementById("saved-container");
 const passwordContainer = document.getElementById("password-container");
