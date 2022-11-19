@@ -57,8 +57,10 @@ header {
 .card-footer {
   text-align: center;
 }
-form {
+#password-selectors {
   visibility: hidden;
+}
+form {
   display: flex;
   justify-content: space-between;
   max-width: 70%;
@@ -138,6 +140,67 @@ button[disabled] {
   overflow: hidden;
 }
 
+.saved-passwords {
+  position: absolute;
+  min-height: 100vh;
+
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#password-container {
+  background-color: #f9fbfd;
+  width: 50%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.saved-passwords > div > h1 {
+  text-align: center;
+}
+.close-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.close-button-container > button {
+  margin: 10px;
+  font-size: 1.2rem;
+  padding: 10px 2em;
+  background-color: #c0c7cf;
+  border: 0;
+  border-radius: 10px;
+}
+ul {
+  font-size: 1.2rem;
+display: flex;
+flex-direction: column;
+gap: 10px;
+justify-content: center;
+align-items: center;
+}
+li {
+  width: 50%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+li > button {
+  font-size: 1.2rem;
+  width: fit-content;
+  height: fit-content;
+}
+li > div {
+  width: 80%;
+  word-break:break-all;
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -161,5 +224,14 @@ button[disabled] {
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+  }
+}
+@media  (max-width: 1200px) {
+  #password-container {
+    width: 100%;
+  }
+  li {
+    flex-direction: column;
+    width: 100%;
   }
 }

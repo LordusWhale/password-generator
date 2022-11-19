@@ -46,9 +46,9 @@ numberCheck.addEventListener("click", writePassword);
 
 var generateBtn = document.querySelector("#generate");
 function showPasswordOptions() {
-  const form = document.querySelector('form');
+  const passwordSelectors = document.getElementById('password-selectors');
   generateBtn.style.visibility = 'hidden';
-  form.style.visibility = "visible"
+  passwordSelectors.style.visibility = "visible"
   writePassword();
 
 }
