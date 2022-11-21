@@ -140,41 +140,7 @@ button[disabled] {
   overflow: hidden;
 }
 
-.saved-passwords {
-  position: absolute;
-  min-height: 100vh;
 
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-#password-container {
-  background-color: #f9fbfd;
-  width: 50%;
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-.saved-passwords > div > h1 {
-  text-align: center;
-}
-.close-button-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-.close-button-container > button {
-  margin: 10px;
-  font-size: 1.2rem;
-  padding: 10px 2em;
-  background-color: #c0c7cf;
-  border: 0;
-  border-radius: 10px;
-}
 ul {
   font-size: 1.2rem;
 display: flex;
